@@ -306,11 +306,11 @@ function onBot({ models: botModel }) {
         authentication.Sequelize = Sequelize;
         authentication.sequelize = sequelize;
         const models = require('./includes/database/model')(authentication);
-        logger(global.getText('priyansh', 'successConnectDatabase'), '[ DATABASE ]');
+        logger(global.getText('alikhan', 'successConnectDatabase'), '[ DATABASE ]');
         const botData = {};
         botData.models = models
         onBot(botData);
-    } catch (error) { logger(global.getText('priyansh', 'successConnectDatabase', JSON.stringify(error)), '[ DATABASE ]'); }
+    } catch (error) { logger(global.getText('alikhan', 'successConnectDatabase', JSON.stringify(error)), '[ DATABASE ]'); }
 })();
 
 process.on('unhandledRejection', (err, p) => {});
